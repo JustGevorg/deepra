@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "deepra"
+version = "0.1.0"
+description = "deepra test task"
+authors = ["gevorg sagiyan"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">3.11"
+fastapi = "^0.110.0"
+uvicorn = "^0.27.1"
+python-dotenv = "^1.0.1"
+gunicorn = "^21.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start_uvicorn = "deepra.src.main:start_uvicorn"
